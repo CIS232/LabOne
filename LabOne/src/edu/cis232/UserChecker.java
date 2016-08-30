@@ -10,7 +10,13 @@ public class UserChecker {
 
 	public static void main(String[] args) throws IOException {
 		ArrayList<String> users = loadUsers();
-		
+		//printUsers(users);
+	}
+
+	private static void printUsers(ArrayList<String> users) {
+		for(String user: users){
+			System.out.println(user);
+		}
 	}
 
 	private static ArrayList<String> loadUsers() throws FileNotFoundException {
